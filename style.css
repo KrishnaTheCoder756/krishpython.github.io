@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Nova+Square&family=Roboto:wght@300;400&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+        h1{
+            color: #0e70a8;
+        }
+        body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #272827;
+        flex-direction: column;
+        gap: 50px;
+        margin: 50px
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Nova+Square&family=Roboto:wght@300;400&display=swap');
+
+        header{
+            height: 57vh;
+            background-size: cover;
+            
+        }
+        #Logo{
+            position: fixed;
+            top: 0;
+            right: 0;
+           
+        }
+        #pythonimg{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #Text {
+            display: inline-block;
+            font-size: 4rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+        }
+        .Enter1{
+            position: relative;
+            background: #fff;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 2em;
+            position: fixed;
+            left: 0;
+            bottom: auto;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+        .Enter1:hover{
+            letter-spacing: 0.25em;
+            color: var(--clr);
+            background: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+        }
+        .Enter1:before{
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: #27282c;
+        }
+        .Enter1 span{
+            position: relative;
+            z-index: 1;
+        }
+        .Enter1 i{
+            position: absolute;
+            inset: 0;
+            display: block;
+
+        }
+        .Enter1 i::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 80%;
+            width: 10px;
+            height: 4px;
+            background:#27282c;
+            transform: translateX(-50%) skewX(325deg);
+            transition: 0.5s;
+        }
+        .Enter1:hover i::before{
+            width: 20px;
+            left:20%;
+        }
+        .Enter1 i::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 10px;
+            height: 4px;
+            background:#27282c;
+            transform: translateX(-50%) skewX(325deg);
+            transition: 0.5s;
+        }
+        .Enter1:hover i::after{
+            width: 20px;
+            left:80%;
+        }
